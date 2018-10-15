@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+html, body{
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+header ul li i{
+    font-size: 2rem;
+    font-weight: 900;
+    color: #d44500;
+    transition: 0.3s linear;
+}
+#brand-social ul li i:hover{
+    color: navy;
+}
+.nav-item i{ 
+    font-size: 1rem;
+    color: rgba(0,0,0,0.5);
+}
+#menu-contents li a{
+    font-weight: 900;
+}
+#menu-contents li a:hover{
+    color:#d44500;
+    transition: 0.2s linear;
+}
+.cover{
+    background-image: url('/images/resize-home.jpg');
+}
+@media screen and (max-width:1024px){
+    #brand-logo img{ 
+        width: 230px;
+        height: 40px;
+    }
+    #brand-letters img{
+        height: 40px;
+    }
+    header ul li i{font-size: 1.5rem;}
+}
+@media screen and (max-width: 990px) {
+    #branding{
+        justify-content: center;
+    }
+    #brand-letters{
+        display: none;
+    }
+
+    #brand-social{
+        display: none;
+    }
+    #menu-contents{
+        text-align: center
+    }
+    #menu-contents li{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #brand-logo img{ 
+        width: 230px;
+        height: 40px;
+    }
+}
