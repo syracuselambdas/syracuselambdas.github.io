@@ -24,8 +24,15 @@ header ul li i{
     color:#d44500;
     transition: 0.2s linear;
 }
+#home{
+    height: 100vh;
+}
 .cover{
-    background-image: url('/images/resize-home.jpg');
+    background-image: url('images/resize-home.jpg');
+    height: 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
 }
 @media screen and (max-width:1024px){
     #brand-logo img{ 
