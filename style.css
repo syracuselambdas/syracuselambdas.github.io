@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
 html, body{
     scroll-behavior: smooth;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
-
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
 header ul li i{
     font-size: 2rem;
     font-weight: 900;
@@ -33,6 +35,13 @@ header ul li i{
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
+}
+#home hr{
+    height: 1px;
+    background-color: white;
+}
+#welcome-text{
+    line-height: 2;
 }
 @media screen and (max-width:1024px){
     #brand-logo img{ 
