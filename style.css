@@ -2,6 +2,7 @@
 html, body{
     scroll-behavior: smooth;
     font-family: 'Raleway', sans-serif;
+    overflow: hidden;
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Montserrat', sans-serif;
@@ -22,7 +23,7 @@ header ul li i{
 #menu-contents li a{
     font-weight: 900;
 }
-#menu-contents li a:hover{
+#menu-contents li a:hover {
     color:#d44500;
     transition: 0.2s linear;
 }
@@ -35,6 +36,8 @@ header ul li i{
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
+    background-position: center 0;
+    ;
 }
 #home hr{
     height: 1px;
@@ -42,7 +45,37 @@ header ul li i{
 }
 #welcome-text{
     line-height: 2;
+    width: 48%;
+    text-align: center;
+    color: white;
 }
+#welcome-text h1{
+    font-weight: 700; 
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+}
+#welcome-text h4{
+    font-size: 1rem;
+}
+#home-buttons button{
+    font-size: 1rem;
+    text-align: center
+}
+button#facebook-btn{background-color:transparent; border-color:white;}
+button#facebook-btn:hover{
+    background-color: #3899ca;
+    color: white;
+    border-color: #3899ca;
+}
+button#sign-up{background-color:#d44500; border-color:transparent;}
+#sign-up:hover{
+    color: white;
+    background-color: #3899ca;
+}
+#main-video{
+    width: 48%;
+}
+
 @media screen and (max-width:1024px){
     #brand-logo img{ 
         width: 230px;
@@ -52,6 +85,9 @@ header ul li i{
         height: 40px;
     }
     header ul li i{font-size: 1.5rem;}
+    #welcome-text h1{
+        font-size: 3rem;
+    }
 }
 @media screen and (max-width: 990px) {
     #branding{
@@ -71,6 +107,7 @@ header ul li i{
         padding-top: 10px;
         padding-bottom: 10px;
     }
+    .cover{height:85%;}
 }
 
 @media screen and (max-width: 768px) {
@@ -78,4 +115,34 @@ header ul li i{
         width: 230px;
         height: 40px;
     }
+    #home-banner-row{
+        flex-direction: column;
+    }
+    #welcome-text{
+        width: 100%;
+    }
+    #welcome-text h1{
+    font-size: 3.5rem;
+    }
+    
+    #main-video{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 425px) {
+    #welcome-text h1{
+        font-size: 2rem;
+    }
+    #main-video{
+        position: relative;
+        height: 200px;
+    }
+    #rush-video{
+        height: 100%;
+        width: 85%;
+        position: absolute;
+    }
+    .cover{height:75%;}
+    #welcome-text h5{font-size:1rem;}
 }
