@@ -2,7 +2,7 @@
 html, body{
     scroll-behavior: smooth;
     font-family: 'Raleway', sans-serif;
-    overflow: hidden;
+
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Montserrat', sans-serif;
@@ -14,7 +14,7 @@ header ul li i{
     transition: 0.3s linear;
 }
 #brand-social ul li i:hover{
-    color: navy;
+    color: #3899ca;
 }
 .nav-item i{ 
     font-size: 1rem;
@@ -28,7 +28,7 @@ header ul li i{
     transition: 0.2s linear;
 }
 #home{
-    height: 100vh;
+    height: 950px;
 }
 .cover{
     background-image: url('images/resize-home.jpg');
@@ -143,6 +143,6 @@ button#sign-up{background-color:#d44500; border-color:transparent;}
         width: 85%;
         position: absolute;
     }
-    .cover{height:75%;}
+    .cover{height:70%;}
     #welcome-text h5{font-size:1rem;}
 }
