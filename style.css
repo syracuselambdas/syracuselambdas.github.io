@@ -88,6 +88,10 @@ button#sign-up{background-color:#d44500; border-color:transparent;}
     color: #3899ca;
     font-weight: 700;
 }
+#content-coreValues ul li div i:hover{
+    color: #3899ca;
+    transition: 0.4s;
+}
 @media screen and (max-width:1024px){
     #brand-logo img{ 
         width: 230px;
