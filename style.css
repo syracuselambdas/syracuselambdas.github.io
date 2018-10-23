@@ -75,7 +75,19 @@ button#sign-up{background-color:#d44500; border-color:transparent;}
 #main-video{
     width: 48%;
 }
-
+#about-section-card-box{
+    border: none;
+}
+.nav-link{
+    color: black;
+}
+.nav-link.active{
+    color: red; /*Need to fix*/
+}
+#aboutTabContent a{
+    color: #3899ca;
+    font-weight: 700;
+}
 @media screen and (max-width:1024px){
     #brand-logo img{ 
         width: 230px;
