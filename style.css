@@ -79,7 +79,7 @@ button#sign-up{background-color:#d44500; border-color:transparent;}
     border: none;
 }
 .section-banner{
-    height: 30%;
+    height: 250px;
     background-image: url('images/resize-home.jpg');/*change photo*/
     background-size: cover;
     background-repeat: no-repeat;
@@ -114,8 +114,7 @@ button#sign-up{background-color:#d44500; border-color:transparent;}
     font-weight: 700;
 }
 #content-coreValues ul li div i{
-    color:  #848688;
-    
+    color:  #848688;   
 }
 #content-coreValues ul li div i:hover{
     color: #3899ca;
@@ -140,6 +139,9 @@ button#sign-up{background-color:#d44500; border-color:transparent;}
     #welcome-text h1{
         font-size: 3rem;
     }
+    .section-banner h2{
+        padding-top: 10%;
+    }
 }
 @media screen and (max-width: 990px) {
     #branding{
@@ -160,6 +162,8 @@ button#sign-up{background-color:#d44500; border-color:transparent;}
         padding-bottom: 10px;
     }
     .cover{height:85%;}
+    .section-banner h2 {
+        padding-top: 12%;
 }
 
 @media screen and (max-width: 768px) {
