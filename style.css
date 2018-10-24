@@ -78,19 +78,55 @@ button#sign-up{background-color:#d44500; border-color:transparent;}
 #about-section-card-box{
     border: none;
 }
-.nav-link{
-    color: black;
+.section-banner{
+    height: 30%;
+    background-image: url('images/resize-home.jpg');/*change photo*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-position: center 0;
+    text-align: center;
+    margin-bottom: 2.5%;
 }
-.nav-link.active{
-    color: red; /*Need to fix*/
+.section-banner h2{
+    padding-top: 6%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+.nav-link{
+    color: grey;
+    font-weight: 700;
+}
+.nav-tabs .nav-link:hover{
+    transition: 0.3s;
+    color: #3899ca;
+}
+.nav-tabs .nav-link.active.show{
+    color: #3899ca;
+}
+#aboutTabContent p{
+    font-size: 0.9rem;
+    color: #848688;
 }
 #aboutTabContent a{
-    color: #3899ca;
+    color: grey;
     font-weight: 700;
+}
+#content-coreValues ul li div i{
+    color:  #848688;
+    
 }
 #content-coreValues ul li div i:hover{
     color: #3899ca;
     transition: 0.4s;
+}
+#content-coreValues ul li div h5{
+    color: grey;
+    font-weight: 700;
+}
+#content-coreValues ul li{
+    justify-content: center;
 }
 @media screen and (max-width:1024px){
     #brand-logo img{ 
@@ -144,8 +180,12 @@ button#sign-up{background-color:#d44500; border-color:transparent;}
     #main-video{
         width: 100%;
     }
-
+    #aboutTab{
+        justify-content: center;
+        flex-direction: column;
+    }
 }
+
 @media screen and (max-width: 425px) {
     #welcome-text h1{
         font-size: 2rem;
@@ -161,4 +201,9 @@ button#sign-up{background-color:#d44500; border-color:transparent;}
     }
     .cover{height:70%;}
     #welcome-text h5{font-size:1rem;}
+    .section-banner h2{padding-top: 20%;}
+    
+}
+@media screen and (max-width: 375px){
+    .section-banner h2{padding-top: 25%;}
 }
