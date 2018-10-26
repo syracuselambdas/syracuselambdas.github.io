@@ -127,6 +127,9 @@ button#sign-up{background-color:#d44500; border-color:transparent;}
 #content-coreValues ul li{
     justify-content: center;
 }
+#brother-photo img{
+    width: 100%;
+}
 @media screen and (max-width:1024px){
     #brand-logo img{ 
         width: 230px;
@@ -164,6 +167,7 @@ button#sign-up{background-color:#d44500; border-color:transparent;}
     .cover{height:85%;}
     .section-banner h2 {
         padding-top: 12%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -188,6 +192,10 @@ button#sign-up{background-color:#d44500; border-color:transparent;}
         justify-content: center;
         flex-direction: column;
     }
+    #brother-photo{text-align: center;}
+    #brother-photo img{
+        width: 60%;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -206,7 +214,9 @@ button#sign-up{background-color:#d44500; border-color:transparent;}
     .cover{height:70%;}
     #welcome-text h5{font-size:1rem;}
     .section-banner h2{padding-top: 20%;}
-    
+    #brother-photo {
+       justify-content: center;
+    }
 }
 @media screen and (max-width: 375px){
     .section-banner h2{padding-top: 25%;}
