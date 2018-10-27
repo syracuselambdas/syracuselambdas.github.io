@@ -133,6 +133,9 @@ button#sign-up{background-color:#d44500; border-color:transparent;}
 #brother-bio p a i{
     font-size: 1.25rem;
 }
+#brother-bio p{
+    line-height: 2;
+}
 #brother-bio p a:hover{
     color: #3899ca;
     transition: 0.4s;
@@ -201,7 +204,7 @@ button#sign-up{background-color:#d44500; border-color:transparent;}
     }
     #brother-photo{text-align: center;}
     #brother-photo img{
-        width: 60%;
+        width: 75%;
     }
 }
 
