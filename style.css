@@ -140,6 +140,25 @@ button#sign-up{background-color:#d44500; border-color:transparent;}
     color: #3899ca;
     transition: 0.4s;
 }
+#accordion .card{
+    border:none;
+}
+#accordion .card .card-header{
+    background-color: transparent;
+    border-bottom: none;
+}
+#accordion .card .card-header h5 button{
+    color: grey;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+#accordion .card .card-header h5 button:hover{
+    color: #3899ca;
+    font-weight: 900;
+    transition: 0.2s;
+}
+
 @media screen and (max-width:1024px){
     #brand-logo img{ 
         width: 230px;
@@ -199,8 +218,8 @@ button#sign-up{background-color:#d44500; border-color:transparent;}
         width: 100%;
     }
     #aboutTab{
-        justify-content: center;
-        flex-direction: column;
+        /* justify-content: center;
+        flex-direction: column; */
     }
     #brother-photo{text-align: center;}
     #brother-photo img{
