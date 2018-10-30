@@ -158,7 +158,25 @@ button#sign-up{background-color:#d44500; border-color:transparent;}
     font-weight: 900;
     transition: 0.2s;
 }
-
+footer{
+    height: 400px;
+    background: #194973;
+    color: white;
+}
+footer h5{
+    
+}
+footer p{
+    font-size: 0.9rem;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    color: #d44500;
+    text-decoration: none;
+}
 @media screen and (max-width:1024px){
     #brand-logo img{ 
         width: 230px;
