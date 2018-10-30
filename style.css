@@ -159,13 +159,10 @@ button#sign-up{background-color:#d44500; border-color:transparent;}
     transition: 0.2s;
 }
 footer{
-    height: 400px;
     background: #194973;
     color: white;
 }
-footer h5{
-    
-}
+
 footer p{
     font-size: 0.9rem;
 }
@@ -215,6 +212,12 @@ footer a:hover{
     .section-banner h2 {
         padding-top: 12%;
     }
+    #footer-contents{
+        flex-direction: column;
+    }
+    #footer-contents div{
+        padding-top: 2rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -243,6 +246,7 @@ footer a:hover{
     #brother-photo img{
         width: 75%;
     }
+    
 }
 
 @media screen and (max-width: 425px) {
@@ -266,5 +270,5 @@ footer a:hover{
     }
 }
 @media screen and (max-width: 375px){
-    .section-banner h2{padding-top: 25%;}
+    .section-banner h2{padding-top: 25%; font-size: 2rem;}
 }
