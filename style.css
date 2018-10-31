@@ -106,10 +106,18 @@ button#sign-up{background-color:#d44500; border-color:transparent;}
     position: relative;
   }
   
-  .image-box > img {
+.image-box > img {
     width: 100%;
   }
-    
+  #followInsta button{
+   background-color:#3899ca; 
+   border: none;
+  }
+ 
+#followInsta button:hover{
+    background-color: #d44500;
+    transition: 0.4s;
+}
 #about-section-card-box{
     border: none;
 }
