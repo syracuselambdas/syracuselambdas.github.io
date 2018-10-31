@@ -32,23 +32,14 @@
             userId:"1531587193",
             limit: 4,
             sortBy: "most-recent",
-            resolution: "thumbnail",
+            resolution: "standard_resolution",
             accessToken: "1531587193.1677ed0.a24077c78de34f6a9fcd7538c6fb6c98",
-            template: '<div class="col-3 instagram-square"><a href="{{link}}"><img width="100%;" src="{{image}}" /></a></div>', 
-            resolution: 'square', // This can be any name you like, you just need to re-use it in the success callback.
-            success: function(response){
-                response.data.forEach(function(e){
-                // Now insert the 'square' size into each image's data:
-                e.images.square = {
-                    url: e.images.thumbnail.url.replace(/vp.*\/.{32}\/.{8}\//, '').replace('150x150', '600x600'),
-                    width: 600,
-                    height: 600
-                };
-                });
-            }
+            template: '<div class="image-box "><div class="instafeed-image-square with-background" style="background-image:url({{image}}); width="85px;"></div></div>'
+            //template: '<div class="col-md-3 col-12 instagram-square instaimg" style="background-image:url({{image}}); width="85px;"></div>'
 });
         feed.run();
     </script>
+
 </head>
 <body>
     <header class="pt-4">
@@ -102,7 +93,7 @@
     <section id="home">
         <div id="home-banner" class="cover">
           <div class="container">
-            <div id="home-banner-row" class="row d-flex justify-content-between pt-5">
+            <div id="home-banner-row" class="row py-5">
                 <div id="welcome-text" class="col-lg-6 col-12 align-self-center pb-4"  >
                     <hr>
                     <h1 class="pb-2">JOIN LAMBDAS!</h1>
@@ -126,8 +117,8 @@
             </div>
           </div>
         </div>
-        <div id="home-instagram" class="container">
-            <div id="instafeed" class="row pt-5">
+        <div id="home-instagram" class="container py-5">
+            <div id="instafeed" class="row image-boxes">
             </div>
         </div>
     </section>
