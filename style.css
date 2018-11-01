@@ -7,6 +7,12 @@ html, body{
 h1,h2,h3,h4,h5,h6{
     font-family: 'Montserrat', sans-serif;
 }
+header{
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    width: 100%;
+}
 header ul li i{
     font-size: 2rem;
     font-weight: 900;
@@ -123,8 +129,8 @@ button#sign-up{background-color:#d44500; border-color:transparent;}
     opacity: 0.6;
     transition: 0.2s;
 }
-
-
+tbody{color: #848688;}
+tbody a{    color: #848688; font-weight: bold;}
 #about-section-card-box{
     border: none;
 }
