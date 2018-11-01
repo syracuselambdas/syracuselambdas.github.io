@@ -118,6 +118,13 @@ button#sign-up{background-color:#d44500; border-color:transparent;}
     background-color: #d44500;
     transition: 0.4s;
 }
+
+.image-box a div:hover{
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+
 #about-section-card-box{
     border: none;
 }
