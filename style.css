@@ -19,6 +19,7 @@ header ul li i{
     color: #d44500;
     transition: 0.3s linear;
 }
+
 #brand-social ul li i:hover{
     color: #3899ca;
 }
@@ -34,7 +35,7 @@ header ul li i{
     transition: 0.2s linear;
 }
 .cover{
-    background-image: url('images/resize-home.jpg');
+    background-image: url('images/cover/home-banner2.jpg');
     height: 60%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -58,14 +59,14 @@ header ul li i{
     letter-spacing: 5px;
 }
 #welcome-text h4{
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 #home-buttons button{
     font-size: 1rem;
     text-align: center
 }
-button#facebook-btn{background-color:transparent; border-color:white;}
-button#facebook-btn:hover{
+#facebook-btn{background-color:transparent; border-color:white;}
+#facebook-btn:hover{
     background-color: #3899ca;
     color: white;
     border-color: #3899ca;
@@ -129,18 +130,22 @@ button#sign-up{background-color:#d44500; border-color:transparent;}
     opacity: 0.6;
     transition: 0.2s;
 }
-tbody{color: #848688;}
-tbody a{    color: #848688; font-weight: bold;}
+#visualizations div #chart1 div div table tbody tr td a{
+    color: grey;
+    text-decoration: none;
+    font-weight: 700;
+}
+div.google-visualization-table{
+    color: gray;
+}
 #about-section-card-box{
     border: none;
 }
 .section-banner{
-    height: 250px;
-    background-image: url('images/resize-home.jpg');/*change photo*/
+    height: 250px;/*change photo*/
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
-    background-position: center 0;
     text-align: center;
     margin-bottom: 2.5%;
 }
@@ -293,10 +298,6 @@ footer a:hover{
     
     #main-video{
         width: 100%;
-    }
-    #aboutTab{
-        /* justify-content: center;
-        flex-direction: column; */
     }
     #brother-photo{text-align: center;}
     #brother-photo img{
