@@ -9,9 +9,6 @@ ExpiresByType text/css "access 1 week"
 ExpiresByType text/html "access 1 week"
 ExpiresByType application/pdf "access 1 week"
 ExpiresByType text/x-javascript "access 1 month"
-ExpiresByType text/css "access plus 1 month"
-ExpiresByType text/javascript "access plus 1 month"
-ExpiresByType application/javascript "access plus 1 month"
 ExpiresByType application/x-shockwave-flash "access 1 month"
 ExpiresByType application/x-font-woff "access 1 month"
 ExpiresByType image/x-icon "access 1 month"
@@ -20,4 +17,29 @@ ExpiresDefault "access 1 week"
 ## EXPIRES CACHING ##
 
 ErrorDocument 404 /index.html
-</IfModule>
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^(.*)\.lambdas.syr\.edu$ [NC]
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^(.*)$ http://syracuselambdas.github.io /$1 [R=301,L]
+RewriteCond %{HTTP_USER_AGENT} libwww-perl.* 
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule .* – [F,L]
+
+SetEnvIfNoCase User-Agent "^libwww-perl*" block_bad_bots
+Deny from env=block_bad_bots
+
+<FilesMatch ".(eot|ttf|otf|woff|woff2)">
+Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
+
+AddType application/font-sfnt            otf ttf
+AddType application/font-woff            woff
+AddType application/font-woff2           woff2
+AddType application/vnd.ms-fontobject    eot
+
+AddType 'text/html; charset=UTF-8' html
