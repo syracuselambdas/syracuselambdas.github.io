@@ -7,8 +7,8 @@
     <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta property=og:title content="Syracuse Lambda Phi Epsilon"/>
     <meta property=og:type content=article />
-    <meta property=og:url content="http://www.syracuse.lambdaphiepsilon.com"/>
-    <meta property=og:image content="images/header/Letters.png"/>
+    <meta property=og:url content="http://syracuselambdas.github.io"/>
+    <meta property=og:image content="http://syracuselambdas.github.io/preview.png"/>
     <meta property=og:description content="Syracuse Lambda Phi Epsilon, the world's largest Asian-interest fraternity"/>
     <meta property=og:site_name content="Syracuse Lambda Phi Epsilon"/>
     <meta name=twitter:card content=summary_large_image>
@@ -16,24 +16,20 @@
     <meta name=twitter:title content="Syracuse Lambda Phi Epsilon Website">
     <meta name=twitter:description content="Syracuse Lambda Phi Epsilon">
     <meta name=twitter:creator content="@syracuselambdas">
-    <meta name=twitter:image:src content="">
-    <meta name=twitter:domain content="http://syracuse.lambdaphiepsilon.com">
-    <link rel=canonical href="http://syracuse.lambdaphiepsilon.com">
-    <link rel="shortcut icon" href=images/favicon.ico>
+    <meta name=twitter:image:src content="http://syracuselambdas.github.io/preview.png">
+    <meta name=twitter:domain content="http://syracuselambdas.github.io">
+    <link rel=canonical href="http://syracuselambdas.github.io">
+    <link rel="shortcut icon" href="http://syracuselambdas.github.io/images/favicon.ico">
     <title>Syracuse Lambda Phi Epsilon</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="JS/instafeed.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-       
-    </script>
-
+    <script src="JS/instafeed.min.js" type="text/javascript" defer></script>
 </head>
 <body>
-    <header class="pt-4">
-        <div class="container pb-3">
+    <header class="pt-lg-4" >
+        <div class="container pb-3" id="header-brands">
                 <div id="branding" class="row d-flex justify-content-lg-between">
                         <div id="brand-letters">
                             <img src="images/header/Letters.png" alt="Lambda Phi Epsilon Letters">
@@ -43,18 +39,22 @@
                         </div>
                         <div id="brand-social">
                             <ul class="list-unstyled d-flex flex-row">
-                                <li class="p-xl-3 px-3"><a href="https://www.instagram.com/syracuselambdas/"><i class="fab fa-instagram"></i></a></li>
-                                <li class="p-xl-3 px-3"><a href="https://www.facebook.com/syracuselambdas/"><i class="fab fa-facebook"></i></a></li>
-                                <li class="p-xl-3 px-3"><a href="https://twitter.com/syracuselambdas"><i class="fab fa-twitter-square"></i></a></li>
+                                <li class="py-xl-1 px-3"><a href="https://www.instagram.com/syracuselambdas/" target="_blank" ><i class="fab fa-instagram"></i></a></li>
+                                <li class="py-xl-1 px-3"><a href="https://www.facebook.com/syracuselambdas/" target="_blank" ><i class="fab fa-facebook"></i></a></li>
+                                <li class="py-xl-1 px-3"><a href="https://twitter.com/syracuselambdas" target="_blank" ><i class="fab fa-twitter-square"></i></a></li>
                             </ul>
                         </div>
                 </div>
         </div>
         
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 py-lg-1">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border-color:transparent;">
                   <span class="navbar-toggler-icon"></span>
                 </button>
+                
+                <div id="mobile-brand-logo">
+                    <img src="images/header/brand-logo.png" alt="Logo">
+                </div>
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul id="menu-contents" class="navbar-nav container justify-content-lg-between">
                     <li class="nav-item">
@@ -80,7 +80,7 @@
               </nav>
     </header>
     
-    <section id="home" style="padding-top:140px;">
+    <section id="home">
         <div id="home-banner" class="cover">
           <div class="container">
             <div id="home-banner-row" class="row py-5">
@@ -90,8 +90,8 @@
                     <h4 class="py-2">The world's largest Asian-interest Fraternity</h4>
                    
                     <div id="home-buttons" class="row d-flex justify-content-center py-2">
-                        <a id="facebook-btn" href="https://www.facebook.com/syracuselambdas/" class="btn btn-primary btn-lg col-8 mr-1" role="button" aria-pressed="true">Like us on Facebook</a>
-                        <button id="sign-up" type="button" class="btn btn-secondary btn-lg col-3">Sign Up</button>
+                        <a id="facebook-btn" href="https://www.facebook.com/syracuselambdas/" target="_blank" class="btn btn-primary btn-lg col-8 mr-1" role="button" aria-pressed="true">Like us on Facebook</a>
+                        <a id="sign-up" href="https://goo.gl/forms/5z6U5LCWN51Hhtn82" target="_blank"  type="button" class="btn btn-secondary btn-lg col-3">Sign Up</a>
                     </div>
                       
                     
@@ -113,7 +113,7 @@
         </div>
     </section>
 
-    <section id="about" class="pb-5 mb-5" style="padding-top:140px;">
+    <section id="about" class="pb-5 mb-5">
       <div class="section-banner" style="background-image: url('images/cover/about-banner.jpg'); background-position: center;">
         <h2>ABOUT</h2>
       </div>
@@ -201,9 +201,9 @@
                </div>
               <div class="tab-pane fade text-left" id="content-fraternityHistory"
                  role="tabpanel" aria-labelledby="tab-fraternityHistory">
-                 <p><a href="https://web.archive.org/web/20170821041822/http://lambdaphiepsilon.com/" target="_blank" rel="noopener">Lambda Phi Epsilon</a> was founded on February 25, 1981, by principal founder Master Craig Ishigo and a group of eighteen other dedicated men on the campus of the University of California of Los Angeles. Noting that Asian fraternities and sororities at the UC campuses were recognized only as service organizations due to their memberships focus on specific Asian groups and to the exclusion of other ethnic groups, the goal of the founders was to transcend this limitation. The founders hoped to set new and higher standards of excellence for all Asian-interest organizations to follow, while feeling a need to offer a fraternity that would be recognized by the IFC and the Greek system.</p>
+                 <p><a href="http://lambdaphiepsilon.com/" target="_blank" rel="noopener">Lambda Phi Epsilon</a> was founded on February 25, 1981, by principal founder Master Craig Ishigo and a group of eighteen other dedicated men on the campus of the University of California of Los Angeles. Noting that Asian fraternities and sororities at the UC campuses were recognized only as service organizations due to their memberships focus on specific Asian groups and to the exclusion of other ethnic groups, the goal of the founders was to transcend this limitation. The founders hoped to set new and higher standards of excellence for all Asian-interest organizations to follow, while feeling a need to offer a fraternity that would be recognized by the IFC and the Greek system.</p>
                 
-                <p>While the original charter focused on Asian Pacific Americans, people from all ethnic backgrounds were welcome to join and support the brotherhood of Lambda Phi Epsilon. Their vision was that the members would eventually become the leaders of their respective communities and bridge the gaps that divided the Asian American community through an affiliation with a common organization. Master Craig Ishigo and Darryl L. Mu signed the charter as president and vice president, respectively. Unknowingly, their efforts had set the stage for the emergence of the largest organization of its kind. To this very day, Lambda Phi Epsilon exists as the only international Asian American interest fraternity to be recognized by both the <a href="https://web.archive.org/web/20170821041822/http://www.nicindy.org/" target="_blank" rel="noopener">North-American Interfraternity Conference</a> and the <a href="https://web.archive.org/web/20170821041822/http://www.napahq.org/" target="_blank" rel="noopener">National Asian Pacific Islander Desi American Panhellenic Association</a>.</p>
+                <p>While the original charter focused on Asian Pacific Americans, people from all ethnic backgrounds were welcome to join and support the brotherhood of Lambda Phi Epsilon. Their vision was that the members would eventually become the leaders of their respective communities and bridge the gaps that divided the Asian American community through an affiliation with a common organization. Master Craig Ishigo and Darryl L. Mu signed the charter as president and vice president, respectively. Unknowingly, their efforts had set the stage for the emergence of the largest organization of its kind. To this very day, Lambda Phi Epsilon exists as the only international Asian American interest fraternity to be recognized by both the <a href="http://www.nicindy.org/" target="_blank" rel="noopener">North-American Interfraternity Conference</a> and the <a href="http://www.napahq.org/" target="_blank" rel="noopener">National Asian Pacific Islander Desi American Panhellenic Association</a>.</p>
                 
                 <p>In early fall of 2014, a group of ambitious, bold, and entrepreneurial men from varied backgrounds assembled to form an interest group for the world’s largest Asian interest fraternity at Syracuse University. They went about choosing to name their interest group &#8220;Prestige&#8221; to illustrate the type of reputation they want their values and outcomes to reflect. Although most of them started out as complete strangers, they quickly forged a bond of brotherhood that strengthened over time as their lofty ideas transformed into tangible feats. Through hosting meaningful service events, facilitating cultural exchanges, and engaging in activist dialogue over the past four months, the interest group enriched the lives of their fellow students and community members. On the morning of March 28, 2015, seven crusading charters established the Charter Class of Syracuse University Lambda Phi Epsilon. A probate show was held on campus on April 4, 2015 to formally introduce the new charters to their multicultural Greek system.</p>
 
@@ -229,7 +229,7 @@
       </div>
     </section>
 
-    <section id="brothers" class="pb-5 my-5" style="padding-top:140px;">
+    <section id="brothers" class="pb-5 my-5" >
         <div class="section-banner" style="background-image: url('images/cover/brothers-banner.jpg'); background-position: center center;" >
                 <h2>BROTHERS</h2>
         </div>
@@ -325,7 +325,7 @@
                                     <b>Hometown:</b> Brooklyn, NY<br>
                                     <b>Major:</b> Finance<br>
                                     <b>Membership:</b> Alumnus (Cornell)<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/tyler.zhang.3?ref=br_rs"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/tylerzhang2/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/tylerfamzhang/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/tyler.zhang.3?ref=br_rs"  target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/tylerzhang2/"  target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/tylerfamzhang/"  target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                             <div class="col-lg-7 col-12">
@@ -348,7 +348,7 @@
                                     <b>Hometown:</b> New York, NY<br>
                                     <b>Major:</b> Computer Science<br>
                                     <b>Membership:</b> Alumnus<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/adrian.leung.731"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/adrianmleung/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/a_m_leung/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/adrian.leung.731"  target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/adrianmleung/"  target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/a_m_leung/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                             <div class="col-lg-7 col-12">
@@ -372,7 +372,7 @@
                                     <b>Hometown:</b> New York, NY<br>
                                     <b>Major:</b> Systems Info Science<br>
                                     <b>Membership:</b> Alumnus<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/hughyangg"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/hughyang/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/hughyangg/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/hughyangg" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/hughyang/" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/hughyangg/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                             <div class="col-lg-7 col-12">
@@ -396,7 +396,7 @@
                                     <b>Hometown:</b> Boston, MA<br>
                                     <b>Major:</b> Economics<br>
                                     <b>Membership:</b> Alumnus<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/ChineseMagic"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/kyeung18/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/chinesemagic/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/ChineseMagic" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/kyeung18/" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/chinesemagic/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                             <div class="col-lg-7 col-12">
@@ -420,7 +420,7 @@
                                     <b>Hometown:</b> Boston, MA<br>
                                     <b>Major:</b> Systems Info Science<br>
                                     <b>Membership:</b> Alumnus<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/ricky.diep.5"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/rickydiep/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/rickyydeep/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/ricky.diep.5" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/rickydiep/" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/rickyydeep/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                             <div class="col-lg-7 col-12">
@@ -444,7 +444,7 @@
                                     <b>Hometown:</b> New York, NY<br>
                                     <b>Major:</b> Mechanical Engineering<br>
                                     <b>Membership:</b> Alumnus<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/johnhuang3679"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/jhuang37/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/jonnjohnnn/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/johnhuang3679" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/jhuang37/" target="_blank"><i class="fab fa-linkedin mx-2" target="_blank"></a></i> <a href="https://www.instagram.com/jonnjohnnn/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                             <div class="col-lg-7 col-12">
@@ -468,7 +468,7 @@
                                     <b>Hometown:</b> Brooklyn, NY<br>
                                     <b>Major:</b> Information Technology<br>
                                     <b>Membership:</b> Alumnus<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/calvin.guo.12"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/cguo06/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/misterguoooo/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/calvin.guo.12" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/cguo06/" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/misterguoooo/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                             <div class="col-lg-7 col-12">
@@ -494,7 +494,7 @@
                                     <b>Hometown:</b> Northvale, NJ<br>
                                     <b>Major:</b> Information Technology<br>
                                     <b>Membership:</b> Alumnus<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/justin.lim.16100"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/justinlimischool/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/jlimmmmmm/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/justin.lim.16100" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/justinlimischool/" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/jlimmmmmm/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                             <div class="col-lg-7 col-12">
@@ -517,7 +517,7 @@
                                     <b>Hometown:</b> Queens, NY<br>
                                     <b>Major:</b> Information Technology<br>
                                     <b>Membership:</b> Alumnus<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/victor.wong.102"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/vawong1/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/v_a_wong/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/victor.wong.102" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/vawong1/" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/v_a_wong/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                             <div class="col-lg-7 col-12">
@@ -543,7 +543,7 @@
                                     <b>Hometown:</b> Syracuse, NY<br>
                                     <b>Major:</b> Information Technology<br>
                                     <b>Membership:</b> Active<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/phillip.nguyen.904"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/phillnguyen/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/phil_losophical/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/phillip.nguyen.904" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/phillnguyen/" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/phil_losophical/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                             <div class="col-lg-7 col-12">
@@ -566,7 +566,7 @@
                                     <b>Hometown:</b> Syracuse, NY<br>
                                     <b>Major:</b> Chemical Engineering<br>
                                     <b>Membership:</b> Active<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/hein.san.1"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/heinsan/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/heinous3/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/hein.san.1" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/heinsan/" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/heinous3/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                         <div class="col-lg-7 col-12">
@@ -590,7 +590,7 @@
                                         <b>Hometown:</b> Hong Kong<br>
                                         <b>Major:</b> Systems Info Science<br>
                                         <b>Membership:</b> Active<br>
-                                        <b>Social:</b> <a href="https://www.facebook.com/wentianwong96"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/wentianwong/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/timmbotimmy/"><i class="fab fa-instagram mx-2"></i></a>
+                                        <b>Social:</b> <a href="https://www.facebook.com/wentianwong96" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/wentianwong/" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/timmbotimmy/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                     </p>
                                 </div>
                             <div class="col-lg-7 col-12">
@@ -614,7 +614,7 @@
                                     <b>Hometown:</b> Dublin, CA<br>
                                     <b>Major:</b> Finance<br>
                                     <b>Membership:</b> Active<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/rzyang86"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/rzyang/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/tofutesla/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/rzyang86" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/rzyang/" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/tofutesla/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                         <div class="col-lg-7 col-12">
@@ -638,7 +638,7 @@
                                     <b>Hometown:</b> Brooklyn, NY<br>
                                     <b>Major:</b> Information Technology<br>
                                     <b>Membership:</b> Active<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/ivan.huang.50951"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/zengfahuang/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/daddybravo15/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/ivan.huang.50951" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/zengfahuang/" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/daddybravo15/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                         <div class="col-lg-7 col-12">
@@ -662,7 +662,7 @@
                                     <b>Hometown:</b> Amherst, MA<br>
                                     <b>Major:</b> Business Economics<br>
                                     <b>Membership:</b> Transfer (Suffolk University)<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/vincent.grimaldi.58"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/vincentgrimaldi2018/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/vgrimaldi15/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/vincent.grimaldi.58" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/vincentgrimaldi2018/" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/vgrimaldi15/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                         <div class="col-lg-7 col-12">
@@ -689,7 +689,7 @@
                                     <b>Hometown:</b> Long Island, NY<br>
                                     <b>Major:</b> Landscape Architecture<br>
                                     <b>Membership:</b> Inactive<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/Leetristan13"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/tristan-lee/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/leetristan7/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/Leetristan13"  target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/tristan-lee/" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/leetristan7/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                             <div class="col-lg-7 col-12">
@@ -712,7 +712,7 @@
                                     <b>Hometown:</b> Captain Cook, HI<br>
                                     <b>Major:</b> Psychology<br>
                                     <b>Membership:</b> Active<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/yoitswillyjoe"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/willy-joseph-paguyo/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/willyjoejoee/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/yoitswillyjoe" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/willy-joseph-paguyo/" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/willyjoejoee/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                             <div class="col-lg-7 col-12">
@@ -738,7 +738,7 @@
                                     <b>Hometown:</b> Queens, NY<br>
                                     <b>Major:</b> Systems Info Science<br>
                                     <b>Membership:</b> Active<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/Mitchellfliang"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/mitchellfliang/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/mtch_el/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/Mitchellfliang" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/mitchellfliang/" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/mtch_el/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                             <div class="col-lg-7 col-12">
@@ -761,7 +761,7 @@
                                     <b>Hometown:</b> Brooklyn, NY<br>
                                     <b>Major:</b> Information Technology<br>
                                     <b>Membership:</b> Active<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/nagwang.gyamtso"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/nagwanggyamtso/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/nagwang.gyamtso/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/nagwang.gyamtso" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/nagwanggyamtso/" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/nagwang.gyamtso/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                             <div class="col-lg-7 col-12">
@@ -784,7 +784,7 @@
                                         <b>Hometown:</b> West Hartford, CT<br>
                                         <b>Major:</b> Information Technology<br>
                                         <b>Membership:</b> Active<br>
-                                        <b>Social:</b> <a href="https://www.facebook.com/vincent.tu.104"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/vincent-tu-100/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/vincenttu22/"><i class="fab fa-instagram mx-2"></i></a>
+                                        <b>Social:</b> <a href="https://www.facebook.com/vincent.tu.104" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/vincent-tu-100/" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/vincenttu22/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                     </p>
                                 </div>
                             <div class="col-lg-7 col-12">
@@ -807,7 +807,7 @@
                                     <b>Hometown:</b>  Brookyln, NY<br>
                                     <b>Major:</b> Interior Design<br>
                                     <b>Membership:</b> Transfer (CUNY Baruch)<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/tylercrazy?ref=br_rs"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/tyler-yong-13358113b/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/buddha.boi/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/tylercrazy?ref=br_rs" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/tyler-yong-13358113b/" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/buddha.boi/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                         <div class="col-lg-7 col-12">
@@ -830,7 +830,7 @@
                                     <b>Hometown:</b>  Shanghai, China<br>
                                     <b>Major:</b> Information Technology<br>
                                     <b>Membership:</b> Active<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/yirui.shen"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/yiruishen/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/shiftytho/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/yirui.shen" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/yiruishen/" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/shiftytho/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                         <div class="col-lg-7 col-12">
@@ -856,7 +856,7 @@
                                     <b>Hometown:</b> Albany, NY<br>
                                     <b>Major:</b> Sports Management<br>
                                     <b>Membership:</b> Active<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/bryan.y.lee.1"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/yong-hoon-lee/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/mekorean/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/bryan.y.lee.1" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/yong-hoon-lee/" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/mekorean/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                             <div class="col-lg-7 col-12">
@@ -879,7 +879,7 @@
                                     <b>Hometown:</b> Shanghai, China<br>
                                     <b>Major:</b> Information Technology<br>
                                     <b>Membership:</b> Active<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/yifan.yang.79219"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/yifanyang25/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/y_e_yang/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/yifan.yang.79219" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/yifanyang25/" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/y_e_yang/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                             <div class="col-lg-7 col-12">
@@ -902,7 +902,7 @@
                                     <b>Hometown:</b> Queens, NY<br>
                                     <b>Major:</b> Computer Science<br>
                                     <b>Membership:</b> Active<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/losel2"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/tenzinlosel/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/theneatkid/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/losel2" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/tenzinlosel/" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/theneatkid/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                             <div class="col-lg-7 col-12">
@@ -928,7 +928,7 @@
                                     <b>Hometown:</b> New Hartford, NY<br>
                                     <b>Major:</b> Computer Science<br>
                                     <b>Membership:</b> Active<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/kamran.shaikh.583"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/kamran-shaikh11/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/kamranshaikh_/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/kamran.shaikh.583" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/kamran-shaikh11/" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/kamranshaikh_/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                             <div class="col-lg-7 col-12">
@@ -951,7 +951,7 @@
                                     <b>Hometown:</b> Syracuse, NY<br>
                                     <b>Major:</b> Physical Threapy<br>
                                     <b>Membership:</b> Active<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/quoc.phan.3517"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/quoc-phan-042005173/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/wookie_p/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/quoc.phan.3517" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/quoc-phan-042005173/" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/wookie_p/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                             <div class="col-lg-7 col-12">
@@ -973,7 +973,7 @@
                                     <b>Hometown:</b> Temecula, CA<br>
                                     <b>Major:</b> Linguistics<br>
                                     <b>Membership:</b> Active<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/dimetrius.anderson"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/dimetrius-anderson-718262141/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/_fishybusiness_/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/dimetrius.anderson" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/dimetrius-anderson-718262141/" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/_fishybusiness_/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                             <div class="col-lg-7 col-12">
@@ -995,7 +995,7 @@
                                     <b>Hometown:</b> Nyack, NY<br>
                                     <b>Major:</b> Mechanical Engineering<br>
                                     <b>Membership:</b> Active<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/dicks.out.for.harambe.666.420"><i class="fab fa-facebook-square mx-2"></i></a> <a href="STILL NEED THIS"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/haney_sampai/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/dicks.out.for.harambe.666.420" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="STILL NEED THIS" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/haney_sampai/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                             <div class="col-lg-7 col-12">
@@ -1018,7 +1018,7 @@
                                     <b>Hometown:</b> Edmonton, Alberta<br>
                                     <b>Major:</b> Pre-Law<br>
                                     <b>Membership:</b> Active<br>
-                                    <b>Social:</b> <a href="https://www.facebook.com/maison.gladue.5"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/maison-gladue-694b96173/"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/maisonmon176/"><i class="fab fa-instagram mx-2"></i></a>
+                                    <b>Social:</b> <a href="https://www.facebook.com/maison.gladue.5" target="_blank"><i class="fab fa-facebook-square mx-2"></i></a> <a href="https://www.linkedin.com/in/maison-gladue-694b96173/" target="_blank"><i class="fab fa-linkedin mx-2"></a></i> <a href="https://www.instagram.com/maisonmon176/" target="_blank"><i class="fab fa-instagram mx-2"></i></a>
                                 </p>
                             </div>
                             <div class="col-lg-7 col-12">
@@ -1038,7 +1038,7 @@
         </div>
     </section>
 
-    <section id="leadership" class="pb-5 my-5"style="padding-top:140px;">
+    <section id="leadership" class="pb-5 my-5">
             <div class="section-banner" style="background-image: url('images/cover/leadership-banner.jpg'); background-position: center 35%;" >
                     <h2>LEADERSHIP</h2>
             </div>
@@ -1365,7 +1365,7 @@
             </div>
     </section>
 
-    <section id="recongition" class="pb-5 my-5" style="padding-top:140px;">
+    <section id="recongition" class="pb-5 my-5">
         <div class="section-banner" style="background-image: url('images/cover/recognition-banner.jpg'); background-position: center 20%;" >
                 <h2>RECOGNITION</h2>
         </div>
@@ -1644,22 +1644,22 @@
                 </div>
                 <div class="col-lg-3 col-12"><h5>Affiliation</h5>
                     <p>
-                        <a href="http://fasa.syr.edu/">Fraternity & Sorority Affairs</a>
+                        <a href="http://fasa.syr.edu/" target="_blank">Fraternity & Sorority Affairs</a>
                         <br><br>
-                        <a href="https://www.instagram.com/mgc_cuse/">Multicultural Greek Council</a>
+                        <a href="https://www.instagram.com/mgc_cuse/" target="_blank">Multicultural Greek Council</a>
                         <br><br>
-                        <a href="http://studentactivities.syr.edu/">Office of Student Affairs</a>
+                        <a href="http://studentactivities.syr.edu/" target="_blank">Office of Student Affairs</a>
                     </p>
                 </div>
                 <div class="col-lg-3 col-12"><h5>Sponsors</h5>
                     <p>
-                        <a href="https://www.redcross.org/">American Red Cross</a>
+                        <a href="https://www.redcross.org/" target="_blank">American Red Cross</a>
                         <br><br>
-                        <a href="https://bethematch.org/">Be the Match</a>
+                        <a href="https://bethematch.org/" target="_blank">Be the Match</a>
                         <br><br>
-                        <a href="https://www.kaptest.com/">Kaplan Test Prep</a>
+                        <a href="https://www.kaptest.com/" target="_blank">Kaplan Test Prep</a>
                         <br><br>
-                        <a href="http://lambdaphiepsilon.com/geico/">Geico</a>
+                        <a href="http://lambdaphiepsilon.com/geico/" target="_blank">Geico</a>
                     </p>
                 </div>
                 <div class="col-lg-3 col-12"><h5>Philosphy</h5>
@@ -1670,7 +1670,8 @@
                     </p>
                 </div>
             </div>
-            <div class="row d-flex justify-content-center py-3 container">Designed by &nbsp  <a href="www.rickydiep.com"> Ricky Diep</a>, &nbsp<a href="https://www.linkedin.com/in/wentianwong/">Tim Wong</a>,&nbsp &amp &nbsp <a href="www.bdosono.com">Bryan Dosono</a></div>
+            <div class="row d-flex justify-content-center py-3 container">© 2018 ΛΦΕ</div>
+            <div class="row d-flex justify-content-center py-3 container">Designed by &nbsp  <a href="www.rickydiep.com" target="_blank"> Ricky Diep</a>, &nbsp<a href="https://www.linkedin.com/in/wentianwong/" target="_blank">Tim Wong</a>,&nbsp &amp &nbsp <a href="www.bdosono.com" target="_blank">Bryan Dosono</a></div>
         </div>
     </footer>
     <script src="https://awesome-table.com/AwesomeTableInclude.js"></script>

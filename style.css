@@ -7,6 +7,12 @@ html, body{
 h1,h2,h3,h4,h5,h6{
     font-family: 'Montserrat', sans-serif;
 }
+section#home{
+    padding-top: 90px;
+}
+section#about, section#brothers, section#leadership, section#recognition{
+    padding-top: 140px;
+}
 header{
     position: fixed;
     z-index: 100;
@@ -19,9 +25,22 @@ header ul li i{
     color: #d44500;
     transition: 0.3s linear;
 }
-
+#brand-letters img{
+    height: 50px;
+}
+#brand-logo img{
+    height: 60px;
+}
+#mobile-brand-logo img{
+    height: 40px;
+    display: none;
+}
 #brand-social ul li i:hover{
     color: #3899ca;
+}
+.navbar-default .navbar-toggle  {
+    color: rgba(0,0,0,.5);
+    border: transparent;
 }
 .nav-item i{ 
     font-size: 1rem;
@@ -65,13 +84,13 @@ header ul li i{
     font-size: 1rem;
     text-align: center
 }
-#facebook-btn{background-color:transparent; border-color:white;}
+#facebook-btn{background-color:transparent; border-color:white; font-size: 1rem;}
 #facebook-btn:hover{
     background-color: #3899ca;
     color: white;
     border-color: #3899ca;
 }
-button#sign-up{background-color:#d44500; border-color:transparent;}
+#sign-up{background-color:#d44500; border-color:transparent;font-size: 1rem;}
 #sign-up:hover{
     color: white;
     background-color: #3899ca;
@@ -257,12 +276,31 @@ footer a:hover{
     #branding{
         justify-content: center;
     }
+    .navbar{
+        padding:15px 0;
+    }
+    #mobile-brand-logo{
+        width: 65%;
+    }
+    #mobile-brand-logo img{
+        height: 40px;
+        display: inline-block;
+    }
+    #header-brands{
+        display: none;
+    }
     #brand-letters{
         display: none;
     }
 
     #brand-social{
         display: none;
+    }
+    section#home{
+        padding-top: 50px;
+    }
+    section#about, section#brothers, section#leadership, section#recognition{
+        padding-top: 30px;
     }
     #menu-contents{
         text-align: center
@@ -309,6 +347,9 @@ footer a:hover{
 }
 
 @media screen and (max-width: 425px) {
+    #mobile-brand-logo{
+        width: 80%;
+    }
     #welcome-text h1{
         font-size: 2rem;
     }
@@ -340,4 +381,10 @@ footer a:hover{
 }
 @media screen and (max-width: 375px){
     .section-banner h2{padding-top: 25%; font-size: 2rem;}
+    #mobile-brand-logo{width: 75%;}
+    #mobile-brand-logo img{height: 30px;}
+        
+}
+@media screen and (max-width: 325px){
+    #mobile-brand-logo{width: 80%;}
 }
