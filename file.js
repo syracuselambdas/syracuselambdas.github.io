@@ -6,7 +6,7 @@ $(document).ready(function(){
         sortBy: "most-recent",
         resolution: "standard_resolution",
         accessToken: "1531587193.1677ed0.a24077c78de34f6a9fcd7538c6fb6c98",
-        template: '<div class="image-box "><a href="{{link}}"><div class="instafeed-image-square with-background" style="background-image:url({{image}}); width="85px;"></div></a></div>'
+        template: '<div class="image-box "><a href="{{link}}" target="_blank"><div class="instafeed-image-square with-background" style="background-image:url({{image}}); width="85px;"></div></a></div>'
 });
     feed.run(); 
 
