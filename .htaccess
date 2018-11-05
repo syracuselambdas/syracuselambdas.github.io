@@ -19,15 +19,9 @@ ExpiresDefault "access 1 week"
 ErrorDocument 404 /index.html
 
 RewriteEngine On
-RewriteCond %{HTTP_HOST} !^(.*)\.lambdas.syr\.edu$ [NC]
-RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
-RewriteRule ^(.*)$ http://syracuselambdas.github.io /$1 [R=301,L]
+RewriteCond %{HTTP_HOST} !^(.*)\.syracuselambdas.github\.io$ [NC]
+RewriteRule ^(.*)$ http://sracuselambdas.github.io /$1 [R=301,L]
 RewriteCond %{HTTP_USER_AGENT} libwww-perl.* 
-RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule .* – [F,L]
 
 SetEnvIfNoCase User-Agent "^libwww-perl*" block_bad_bots
